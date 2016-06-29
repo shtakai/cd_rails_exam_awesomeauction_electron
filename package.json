@@ -2,9 +2,13 @@
   "name": "awesome_client",
   "version": "1.0.0",
   "description": "for localhost",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "install-app-deps",
+    "pack": "build --dir",
+    "dist": "build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/shtakai/cd_rails_exam_awesomeauction_electron/issues"
   },
-  "homepage": "https://github.com/shtakai/cd_rails_exam_awesomeauction_electron#readme"
+  "homepage": "https://github.com/shtakai/cd_rails_exam_awesomeauction_electron#readme",
+  "dependencies": {
+    "electron-prebuilt": "^1.2.5"
+  },
+  "build": {
+    "appId": "awesome.auciton",
+    "app-category-type": "sashimi.oishii.yo"
+  }
 }
