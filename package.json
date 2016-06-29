@@ -1,0 +1,19 @@
+{
+  "name": "awesome_client",
+  "version": "1.0.0",
+  "description": "for localhost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtakai/cd_rails_exam_awesomeauction_electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shtakai/cd_rails_exam_awesomeauction_electron/issues"
+  },
+  "homepage": "https://github.com/shtakai/cd_rails_exam_awesomeauction_electron#readme"
+}
