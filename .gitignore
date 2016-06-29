@@ -47,3 +47,5 @@ jspm_packages
 !/test/sample/bower.json
 /npm-shrinkwrap.json
 .env
+*-ia32/
+*-x64/
