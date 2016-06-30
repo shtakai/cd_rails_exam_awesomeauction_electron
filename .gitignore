@@ -49,3 +49,5 @@ jspm_packages
 .env
 *-ia32/
 *-x64/
+app/**/*.js
+app/**/*.js.map
