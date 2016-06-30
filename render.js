@@ -58,3 +58,4 @@ $('#awesome').click(function(){
 })
 
 Menu.setApplicationMenu(menu)
+
