@@ -4,10 +4,16 @@
   "description": "for localhost",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pack": "build --dir",
-    "dist": "build"
+    "dist": "build",
+    "start": "tsc && npm run tsc:w",
+    "elec": "electron .",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
   },
   "repository": {
     "type": "git",
@@ -37,7 +43,9 @@
     "zone.js": "0.6.12",
 
     "angular2-in-memory-web-api": "0.0.13",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "typescript": "^1.8.10",
+    "typings":"^1.0.4"
   },
   "build": {
     "appId": "awesome.auciton",
