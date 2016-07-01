@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.write('<base href="' + document.location + '" />');</script>
   <meta charset="UTF-8">
-  <title>刺身喰え、刺身</title>
+  <title>Awesome Auction Electron</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 1. Load libraries -->
+  <!-- IE required polyfill -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <!-- 2. Configure SystemJS -->
+  <script src="systemjs.config.js"></script>
+  <script>
+System.import('app').catch(function(err){ console.error(err); });
+  </script>
 </head>
 <body>
-  <h1>Sashimi</h1>
-  <div>
-    Consectetur maiores consectetur aperiam dolorem id itaque doloribus. Quam dignissimos eius necessitatibus officiis quisquam veniam? Cum nobis corporis et dolor labore! Placeat enim harum consectetur earum doloribus tenetur? Obcaecati nulla.
+  <my-app>Loading...</my-app>
+  <div class="pokemon">
+    <input type="number" id = "pokeindex" min="1" max="500" value = "5">
+    <button id = "intro">Introduction</button>
+    <div class="pokemons"></div>
   </div>
-
+  <div id="awesome">
+    <input type="number" id = "auction_id">
+    <button id ="auction_list">Get Auction List</button>
+    <div class="auction"></div>
+  </div>
 </body>
+
+<script>
+  require('./render.js');
+</script>
 </html>
